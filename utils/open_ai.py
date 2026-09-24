@@ -36,6 +36,7 @@ def _post(url, payload, api_key):
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
+            "User-Agent": "openai-python/1.50.0"
         },
     )
     with urllib.request.urlopen(req, context=_SSL_CTX, timeout=60) as r:
