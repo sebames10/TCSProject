@@ -1,4 +1,5 @@
 .virtual_env
 .venv
+.aiLabVnv
 __pycache__
 *.pyc
